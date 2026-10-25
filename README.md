@@ -3,7 +3,8 @@
 Persönliches Portfolio von Tung Thanh Dao. Die einseitige Website stellt die
 aktuelle Werkstudententätigkeit in Systemadministration und KI, den Aufbau und
 Betrieb lokaler LLM-Infrastruktur, Elektrotechnik und Informatik sowie
-ausgewählte Projekte vor.
+ausgewählte Projekte vor. Berufserfahrung und Ausbildung sind als separate
+Spalten dargestellt.
 
 Das In-house-Homelab verbindet Home Assistant, Tailscale, AdGuard,
 Matter/Thread und lokale KI für Smart-Home-Automatisierung und Coding.
@@ -49,8 +50,9 @@ gehören in die öffentliche Projektbeschreibung.
 - Die E-Mail-Kontaktoption ist auf ausdrücklichen Wunsch öffentlich. Sie ist
   als `mailto`-Link eingebunden und kann daher von Scraping-Bots ausgelesen
   werden.
-- Telefonnummern, Arbeitgeber, genaue Bildungsorte und Wohnorte werden nicht
-  auf der Website veröffentlicht.
+- Telefonnummern und Wohnadresse werden nicht auf der Website veröffentlicht.
+- Arbeitgeber und Hochschulen sind im Werdegang mit den vom Inhaber
+  bereitgestellten Namen aufgeführt.
 - Zusätzlich ist Kontakt über das öffentliche
   [GitHub-Profil](https://github.com/MrSh1r0) möglich.
 - Die Seite setzt `noindex`- und `nofollow`-Anweisungen für regelkonforme
