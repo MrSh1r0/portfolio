@@ -158,9 +158,34 @@
             <p class="eyebrow">02 — Mein Werdegang</p>
             <h2 id="work-title">Mein Weg<br><em>in Beruf & Studium.</em></h2>
           </div>
-          <div class="resume-columns">
+          <div class="resume-tabs" data-resume-tabs>
+            <div class="resume-tablist" role="tablist" aria-label="Werdegang">
+              <button
+                class="resume-tab"
+                id="beruf-tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="beruf-panel"
+                tabindex="0"
+              >Berufserfahrung</button>
+              <button
+                class="resume-tab"
+                id="ausbildung-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="ausbildung-panel"
+                tabindex="-1"
+              >Ausbildung</button>
+            </div>
+            <button class="resume-next" type="button" aria-label="Zur Ausbildung wechseln" aria-controls="ausbildung-panel">
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <section class="resume-panel" id="beruf-panel" role="tabpanel" aria-labelledby="beruf-tab" tabindex="0">
             <div class="resume-group">
-              <h3 class="resume-group-title">Berufserfahrung</h3>
+              <h3 class="resume-group-title">Berufliche Stationen</h3>
               <div class="timeline">
                 <article class="timeline-item">
                   <div class="timeline-date"><span class="status-dot"></span> Aktuell</div>
@@ -213,9 +238,10 @@
                 </article>
               </div>
             </div>
-            <span class="resume-connector" aria-hidden="true">→</span>
+          </section>
+          <section class="resume-panel" id="ausbildung-panel" role="tabpanel" aria-labelledby="ausbildung-tab" tabindex="0" hidden>
             <div class="resume-group">
-              <h3 class="resume-group-title">Ausbildung</h3>
+              <h3 class="resume-group-title">Ausbildungsweg</h3>
               <div class="timeline">
                 <article class="timeline-item">
                   <div class="timeline-date"><span class="status-dot"></span> Seit 10/2023</div>
@@ -254,7 +280,7 @@
                 </article>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
 
@@ -401,5 +427,46 @@
       <a href="#start">Zurück nach oben ↑</a>
       <span>© <span id="year">2026</span></span>
     </footer>
+    <script>
+      const resumeTabs = document.querySelector("[data-resume-tabs]");
+      const resumeTabButtons = [...resumeTabs.querySelectorAll('[role="tab"]')];
+      const resumeNextButton = resumeTabs.querySelector(".resume-next");
+
+      function selectResumeTab(tab, moveFocus = false) {
+        resumeTabButtons.forEach((button) => {
+          const selected = button === tab;
+          button.setAttribute("aria-selected", String(selected));
+          button.tabIndex = selected ? 0 : -1;
+          document.getElementById(button.getAttribute("aria-controls")).hidden = !selected;
+        });
+
+        const nextTab = resumeTabButtons[(resumeTabButtons.indexOf(tab) + 1) % resumeTabButtons.length];
+        resumeNextButton.setAttribute("aria-label", `Weiter zu ${nextTab.textContent.trim()}`);
+        resumeNextButton.setAttribute("aria-controls", nextTab.getAttribute("aria-controls"));
+        resumeNextButton.querySelector("span").textContent = nextTab === resumeTabButtons[0] ? "←" : "→";
+
+        if (moveFocus) tab.focus();
+      }
+
+      resumeTabButtons.forEach((tab, index) => {
+        tab.addEventListener("click", () => selectResumeTab(tab));
+        tab.addEventListener("keydown", (event) => {
+          let nextIndex;
+          if (event.key === "ArrowRight") nextIndex = (index + 1) % resumeTabButtons.length;
+          else if (event.key === "ArrowLeft") nextIndex = (index - 1 + resumeTabButtons.length) % resumeTabButtons.length;
+          else if (event.key === "Home") nextIndex = 0;
+          else if (event.key === "End") nextIndex = resumeTabButtons.length - 1;
+          else return;
+
+          event.preventDefault();
+          selectResumeTab(resumeTabButtons[nextIndex], true);
+        });
+      });
+
+      resumeNextButton.addEventListener("click", () => {
+        const selectedIndex = resumeTabButtons.findIndex((tab) => tab.getAttribute("aria-selected") === "true");
+        selectResumeTab(resumeTabButtons[(selectedIndex + 1) % resumeTabButtons.length]);
+      });
+    </script>
   </body>
 </html>

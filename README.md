@@ -3,8 +3,8 @@
 Persönliches Portfolio von Tung Thanh Dao. Die einseitige Website stellt die
 aktuelle Werkstudententätigkeit in Systemadministration und KI, den Aufbau und
 Betrieb lokaler LLM-Infrastruktur, Elektrotechnik und Informatik sowie
-ausgewählte Projekte vor. Berufserfahrung und Ausbildung sind als separate
-Spalten dargestellt.
+ausgewählte Projekte vor. Berufserfahrung und Ausbildung lassen sich über
+barrierearme Tabs umschalten.
 
 Das In-house-Homelab verbindet Home Assistant, Tailscale, AdGuard,
 Matter/Thread und lokale KI für Smart-Home-Automatisierung und Coding.
