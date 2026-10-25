@@ -39,12 +39,12 @@ Die Inhalte sind auf Deutsch. Im Lebenslauf genannte Projekte ohne öffentliches
 Repository werden vorgestellt, aber nicht als öffentliche GitHub-Repositories
 verlinkt.
 
-## Profilbilder
+## Öffentliches Profilbild
 
-- `assets/official-portrait.jpg` — offizielles Portrait im Profilabschnitt und
-  als Vorschaubild beim Teilen der Website.
-- `assets/github-profile.jpg` — verlinktes Profilbild für das
+- `assets/github-profile.jpg` — öffentliches Profilbild im Profilabschnitt und
+  als Vorschaubild beim Teilen der Website. Es verlinkt auf das
   [GitHub-Profil MrSh1r0](https://github.com/MrSh1r0).
+- Das offizielle Portrait wird nicht auf der öffentlichen Website verwendet.
 
 ## Projektstruktur
 
