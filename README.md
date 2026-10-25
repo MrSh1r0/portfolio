@@ -1,8 +1,8 @@
 # Tung Thanh Dao — Portfolio
 
-Persönliches Portfolio von Tung Thanh Dao, Werkstudent für
-Systemadministration und KI bei THEES+PARTNER in Trier. Die einseitige Website
-stellt Profil, Berufserfahrung, Ausbildung, Projekte und Kontakt vor.
+Persönliches Portfolio mit Schwerpunkten in Systemadministration, IT-Support,
+KI und Webentwicklung. Die einseitige Website stellt Profil, Erfahrung,
+Ausbildung und Projekte vor.
 
 ## Live ansehen
 
@@ -39,12 +39,22 @@ Die Inhalte sind auf Deutsch. Im Lebenslauf genannte Projekte ohne öffentliches
 Repository werden vorgestellt, aber nicht als öffentliche GitHub-Repositories
 verlinkt.
 
+## Datenschutz
+
+- Es werden keine E-Mail-Adresse, Telefonnummer, Arbeitgeber, genauen
+  Bildungsorte oder Wohnorte auf der Website veröffentlicht.
+- Kontakt ist ausschließlich über das öffentliche
+  [GitHub-Profil](https://github.com/MrSh1r0) möglich.
+- Die Seite setzt `noindex`- und `nofollow`-Anweisungen für regelkonforme
+  Suchmaschinen. Diese Anweisungen verhindern nicht, dass Dritte öffentliche
+  Inhalte abrufen oder kopieren.
+
 ## Öffentliches Profilbild
 
 - `assets/github-profile.jpg` — öffentliches Profilbild im Profilabschnitt und
   als Vorschaubild beim Teilen der Website. Es verlinkt auf das
   [GitHub-Profil MrSh1r0](https://github.com/MrSh1r0).
-- Das offizielle Portrait wird nicht auf der öffentlichen Website verwendet.
+- Das offizielle Portrait ist nicht Teil der Website.
 
 ## Projektstruktur
 
