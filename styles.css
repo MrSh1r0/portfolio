@@ -618,10 +618,19 @@ h2 em {
 
 .resume-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr) 2rem minmax(0, 1fr);
   align-items: start;
   gap: clamp(1.5rem, 4vw, 4rem);
   margin-top: 4rem;
+}
+
+.resume-connector {
+  align-self: center;
+  margin-top: 2rem;
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 .resume-group-title {
@@ -759,6 +768,10 @@ h2 em {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.project-grid > * {
+  min-width: 0;
 }
 
 .project-card {
@@ -1046,10 +1059,14 @@ h2 em {
 
 .wide-project-content {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   align-items: center;
   gap: 2rem;
   margin-top: 0.7rem;
+}
+
+.wide-project-content > div {
+  min-width: 0;
 }
 
 .graphic-ui {
@@ -1228,7 +1245,8 @@ h2 em {
   }
 
   .resume-columns {
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr) 1.5rem minmax(0, 1fr);
+    gap: 1rem;
   }
 
   .hero-visual {
@@ -1249,12 +1267,47 @@ h2 em {
   .work-inner {
     padding-block: 6rem;
   }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-wide {
+    grid-column: auto;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+
+  .projects-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .wide-project-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+
+  .graphic-ui {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 760px) {
   .resume-columns {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .resume-connector {
+    justify-self: center;
+    margin-top: -2.4rem;
+    margin-bottom: -2.4rem;
+    transform: rotate(90deg);
   }
 
   .hero {
@@ -1391,24 +1444,11 @@ h2 em {
     gap: 0.6rem;
   }
 
-  .projects-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
   .project-grid {
     grid-template-columns: 1fr;
   }
 
-  .project-card {
-    min-height: 380px;
-    padding: 1.3rem;
-  }
-
   .project-wide {
-    min-height: 350px;
     grid-column: auto;
   }
 
