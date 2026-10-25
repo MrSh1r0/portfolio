@@ -188,8 +188,8 @@ h2 {
 h1 {
   max-width: 720px;
   margin-bottom: 1.65rem;
-  font-size: clamp(3.1rem, 6vw, 6.35rem);
-  line-height: 0.99;
+  font-size: clamp(3.1rem, 5.5vw, 5rem);
+  line-height: 1.08;
 }
 
 h1 em,
@@ -509,7 +509,7 @@ h2 em {
 .contact-inner h2 {
   margin: 0;
   font-size: clamp(2.5rem, 4.6vw, 4.8rem);
-  line-height: 1.05;
+  line-height: 1.12;
 }
 
 .profile-intro {
@@ -1290,7 +1290,7 @@ h2 em {
 
   .hero {
     min-height: auto;
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.85fr);
+    grid-template-columns: 1fr;
     padding-block: 4rem;
   }
 
@@ -1397,7 +1397,7 @@ h2 em {
 
   h1 {
     max-width: 540px;
-    font-size: clamp(3.1rem, 15vw, 5rem);
+    font-size: clamp(3.1rem, 12vw, 4rem);
   }
 
   .hero-visual {
