@@ -831,6 +831,55 @@ h2 em {
   font-style: normal;
 }
 
+.graphic-homelab {
+  display: grid;
+  grid-template-rows: auto 22px 1fr;
+  gap: 0;
+  padding: 1rem;
+  background: #e1ebdf;
+  color: #273c34;
+  font-family: var(--mono);
+  font-size: clamp(0.55rem, 1vw, 0.68rem);
+}
+
+.graphic-homelab > span {
+  justify-self: center;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(39, 60, 52, 0.2);
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.homelab-connectors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 82%;
+  justify-self: center;
+}
+
+.homelab-connectors i {
+  justify-self: center;
+  width: 1px;
+  height: 100%;
+  background: #91a89a;
+}
+
+.homelab-services {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  gap: 0.35rem;
+}
+
+.homelab-services span {
+  display: grid;
+  min-height: 42px;
+  padding: 0.45rem 0.25rem;
+  place-items: center;
+  border: 1px solid rgba(39, 60, 52, 0.18);
+  background: rgba(255, 255, 255, 0.42);
+  text-align: center;
+}
+
 .graphic-cube {
   background: #f0efe9;
   perspective: 450px;
@@ -1345,6 +1394,19 @@ h2 em {
   .project-wide {
     min-height: 350px;
     grid-column: auto;
+  }
+
+  .homelab-services {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .homelab-connectors {
+    display: none;
+  }
+
+  .graphic-homelab {
+    grid-template-rows: auto 1fr;
+    gap: 0.55rem;
   }
 
   .wide-project-content {

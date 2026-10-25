@@ -1,12 +1,12 @@
 # Tung Thanh Dao — Portfolio
 
-Persönliches Portfolio von Tung Thanh Dao. Die einseitige Website stellt
-Elektrotechnik, das abgeschlossene Informatikstudium mit Schwerpunkt Digitale
-Medien und Spielen, frühere Berufserfahrung und ausgewählte Projekte vor.
+Persönliches Portfolio von Tung Thanh Dao. Die einseitige Website stellt die
+aktuelle Werkstudententätigkeit in Systemadministration und KI, den Aufbau und
+Betrieb lokaler LLM-Infrastruktur, Elektrotechnik und Informatik sowie
+ausgewählte Projekte vor.
 
-Ausbildungs- und Berufsdaten orientieren sich am aktuellen Lebenslauf vor dem
-Einstieg in die Systemadministration. Die Projektübersicht ergänzt die dort
-nicht aufgeführten eigenen und öffentlichen Arbeiten.
+Das In-house-Homelab verbindet Home Assistant, Tailscale, AdGuard,
+Matter/Thread und lokale KI für Smart-Home-Automatisierung und Coding.
 
 ## Live ansehen
 
@@ -40,7 +40,9 @@ Anschließend <http://localhost:8000> öffnen.
 - Profilbilder: `assets/`
 
 Die Inhalte sind auf Deutsch. Projekte ohne öffentliches Repository werden
-vorgestellt, aber nicht als öffentliche GitHub-Repositories verlinkt.
+vorgestellt, aber nicht als öffentliche GitHub-Repositories verlinkt. Keine
+privaten Zugangsdaten, Netzwerkdetails oder internen Systeminformationen
+gehören in die öffentliche Projektbeschreibung.
 
 ## Datenschutz
 
