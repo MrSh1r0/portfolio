@@ -1166,8 +1166,11 @@ h2 em {
 }
 
 .project-wide .project-footer > span {
+  flex: 1 1 8rem;
+  max-width: 10rem;
   border-color: #484b42;
   color: #d0d2c9;
+  text-align: center;
 }
 
 .project-note {

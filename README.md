@@ -40,10 +40,11 @@ Anschließend <http://localhost:8000> öffnen.
 - Layout, Farben und responsive Regeln: `styles.css`
 - Profilbilder: `assets/`
 
-Die Inhalte sind auf Deutsch. Alle öffentlichen GitHub-Repositories sind im
-Projektbereich direkt verlinkt. Projekte ohne öffentliches Repository werden
-als solche gekennzeichnet. Keine privaten Zugangsdaten, Netzwerkdetails oder
-internen Systeminformationen gehören in die öffentliche Projektbeschreibung.
+Die Inhalte sind auf Deutsch. Ausgewählte öffentliche GitHub-Projekte sind im
+Projektbereich direkt verlinkt; private Projekte und Profil-Repositories
+werden dort nicht als Projekte aufgeführt. Keine privaten Zugangsdaten,
+Netzwerkdetails oder internen Systeminformationen gehören in die öffentliche
+Projektbeschreibung.
 
 ## Datenschutz
 
@@ -62,7 +63,7 @@ internen Systeminformationen gehören in die öffentliche Projektbeschreibung.
 ## Öffentliches Profilbild
 
 - `assets/github-profile.jpg` — öffentliches Profilbild im Profilabschnitt und
-  als Vorschaubild beim Teilen der Website. Es verlinkt auf das
+  als Favicon und Vorschaubild beim Teilen der Website. Es verlinkt auf das
   [GitHub-Profil MrSh1r0](https://github.com/MrSh1r0).
 - Das offizielle Portrait ist nicht Teil der Website.
 
