@@ -40,10 +40,10 @@ Anschließend <http://localhost:8000> öffnen.
 - Layout, Farben und responsive Regeln: `styles.css`
 - Profilbilder: `assets/`
 
-Die Inhalte sind auf Deutsch. Projekte ohne öffentliches Repository werden
-vorgestellt, aber nicht als öffentliche GitHub-Repositories verlinkt. Keine
-privaten Zugangsdaten, Netzwerkdetails oder internen Systeminformationen
-gehören in die öffentliche Projektbeschreibung.
+Die Inhalte sind auf Deutsch. Alle öffentlichen GitHub-Repositories sind im
+Projektbereich direkt verlinkt. Projekte ohne öffentliches Repository werden
+als solche gekennzeichnet. Keine privaten Zugangsdaten, Netzwerkdetails oder
+internen Systeminformationen gehören in die öffentliche Projektbeschreibung.
 
 ## Datenschutz
 
