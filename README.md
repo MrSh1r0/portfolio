@@ -1,37 +1,70 @@
 # Tung Thanh Dao — Portfolio
 
-Eine responsive, statische Portfolio-Website auf Deutsch. Sie stellt Tung Thanh
-Dao und seine Arbeit in Systemadministration, IT-Support, KI, MDM und
-Intranet-Webentwicklung bei THEES+PARTNER in Trier vor.
+Persönliches Portfolio von Tung Thanh Dao, Werkstudent für
+Systemadministration und KI bei THEES+PARTNER in Trier. Die einseitige Website
+stellt Profil, Berufserfahrung, Ausbildung, Projekte und Kontakt vor.
 
-## Lokal ansehen
+## Live ansehen
 
-Die Website benötigt weder Build-Schritt noch zusätzliche Abhängigkeiten.
+[mrsh1r0.github.io/portfolio](https://mrsh1r0.github.io/portfolio/)
+
+## Technologie
+
+- Semantisches HTML5
+- Responsives CSS
+- Statische Bereitstellung über GitHub Pages
+- GitHub Actions für den automatischen Deploy
+
+Die Website benötigt kein Framework, keine Build-Schritte und keine
+JavaScript-Abhängigkeiten.
+
+## Lokal starten
+
 `index.html` direkt im Browser öffnen oder im Repository-Verzeichnis einen
-statischen Webserver starten:
+lokalen Webserver starten:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Danach `http://localhost:8000` öffnen.
+Anschließend <http://localhost:8000> öffnen.
 
-## Auf GitHub Pages veröffentlichen
+## Inhalte bearbeiten
 
-Der Workflow unter `.github/workflows/deploy.yml` veröffentlicht den Inhalt
-dieses Repositorys bei jedem Push auf `main` und kann auch manuell gestartet
-werden.
+- Texte, Abschnitte, Navigation und Metadaten: `index.html`
+- Layout, Farben und responsive Regeln: `styles.css`
+- Profilbilder: `assets/`
 
-1. Den Branch `main` zu GitHub pushen.
-2. Im Repository unter **Settings → Pages → Build and deployment** als Quelle
-   **GitHub Actions** auswählen.
-3. Den erfolgreichen Lauf unter **Actions** abwarten. GitHub zeigt die
-   veröffentlichte URL im Deployment an. Für dieses Repository ist die URL
-   üblicherweise `https://mrsh1r0.github.io/portfolio/`.
+Die Inhalte sind auf Deutsch. Im Lebenslauf genannte Projekte ohne öffentliches
+Repository werden vorgestellt, aber nicht als öffentliche GitHub-Repositories
+verlinkt.
 
-## Inhalt aktualisieren
+## Profilbilder
 
-- Texte, Projekte, Kontakt und Navigation: `index.html`
-- Gestaltung und responsive Layouts: `styles.css`
-- Die Projekte ohne öffentliche Repository-Links sind im Lebenslauf genannt;
-  private Projekte werden nicht als öffentlich verlinkt dargestellt.
+- `assets/official-portrait.jpg` — offizielles Portrait im Profilabschnitt und
+  als Vorschaubild beim Teilen der Website.
+- `assets/github-profile.jpg` — verlinktes Profilbild für das
+  [GitHub-Profil MrSh1r0](https://github.com/MrSh1r0).
+
+## Projektstruktur
+
+```text
+.
+├── .github/workflows/deploy.yml  # GitHub-Pages-Deployment
+├── assets/                       # Profilbilder
+├── index.html                    # Portfolio-Inhalte und Struktur
+├── styles.css                    # Gestaltung und mobile Layouts
+└── README.md
+```
+
+## Deployment
+
+Der Workflow `.github/workflows/deploy.yml` veröffentlicht die Website bei
+jedem Push auf `main` und kann unter **Actions** manuell gestartet werden.
+GitHub Pages muss in **Settings → Pages → Build and deployment** auf
+**GitHub Actions** eingestellt sein.
+
+Die klare Trennung von Profil, Ausbildung, Erfahrung, Projekten und Kontakt
+orientiert sich an der Struktur des
+[jandarn/portfolio](https://github.com/jandarn/portfolio); dieses Projekt
+bleibt eine eigenständige, frameworkfreie Umsetzung.

@@ -514,16 +514,105 @@ h2 em {
 
 .profile-intro {
   max-width: 670px;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   color: #4f514a;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
   line-height: 1.8;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.52fr);
+  align-items: start;
+  gap: 2rem 1.4rem;
+}
+
+.profile-images {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.official-photo {
+  position: relative;
+  height: 265px;
+  margin: 0;
+  overflow: hidden;
+  background: #e9e7df;
+}
+
+.official-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.official-photo figcaption {
+  position: absolute;
+  right: 0.55rem;
+  bottom: 0.55rem;
+  left: 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  padding: 0.7rem 0.8rem;
+  background: rgba(255, 254, 250, 0.94);
+}
+
+.official-photo figcaption strong,
+.github-profile-caption strong {
+  font-size: 0.72rem;
+}
+
+.official-photo figcaption span,
+.github-profile-caption small {
+  color: var(--muted);
+  font-size: 0.6rem;
+}
+
+.github-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  background: var(--white);
+  transition: transform 160ms ease;
+}
+
+.github-profile-card:hover {
+  transform: translateY(-2px);
+}
+
+.github-profile-card img {
+  display: block;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.github-profile-caption {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+
+.github-profile-caption small {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.github-profile-caption small span {
+  color: var(--blue);
 }
 
 .profile-details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
+  grid-column: 1 / -1;
 }
 
 .profile-details article {
@@ -1207,6 +1296,31 @@ h2 em {
   .profile-details {
     grid-template-columns: 1fr;
     gap: 1.3rem;
+  }
+
+  .profile-content {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .profile-images {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .official-photo {
+    height: 220px;
+  }
+
+  .github-profile-card {
+    align-self: start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .github-profile-card img {
+    width: 64px;
+    height: 64px;
   }
 
   .profile-details article {
