@@ -46,9 +46,12 @@ gehören in die öffentliche Projektbeschreibung.
 
 ## Datenschutz
 
-- Es werden keine E-Mail-Adresse, Telefonnummer, Arbeitgeber, genauen
-  Bildungsorte oder Wohnorte auf der Website veröffentlicht.
-- Kontakt ist ausschließlich über das öffentliche
+- Die E-Mail-Kontaktoption ist auf ausdrücklichen Wunsch öffentlich. Sie ist
+  als `mailto`-Link eingebunden und kann daher von Scraping-Bots ausgelesen
+  werden.
+- Telefonnummern, Arbeitgeber, genaue Bildungsorte und Wohnorte werden nicht
+  auf der Website veröffentlicht.
+- Zusätzlich ist Kontakt über das öffentliche
   [GitHub-Profil](https://github.com/MrSh1r0) möglich.
 - Die Seite setzt `noindex`- und `nofollow`-Anweisungen für regelkonforme
   Suchmaschinen. Diese Anweisungen verhindern nicht, dass Dritte öffentliche
