@@ -1,8 +1,12 @@
 # Tung Thanh Dao — Portfolio
 
-Persönliches Portfolio mit Schwerpunkten in Systemadministration, IT-Support,
-KI und Webentwicklung. Die einseitige Website stellt Profil, Erfahrung,
-Ausbildung und Projekte vor.
+Persönliches Portfolio von Tung Thanh Dao. Die einseitige Website stellt
+Elektrotechnik, das abgeschlossene Informatikstudium mit Schwerpunkt Digitale
+Medien und Spielen, frühere Berufserfahrung und ausgewählte Projekte vor.
+
+Ausbildungs- und Berufsdaten orientieren sich am aktuellen Lebenslauf vor dem
+Einstieg in die Systemadministration. Die Projektübersicht ergänzt die dort
+nicht aufgeführten eigenen und öffentlichen Arbeiten.
 
 ## Live ansehen
 
@@ -35,9 +39,8 @@ Anschließend <http://localhost:8000> öffnen.
 - Layout, Farben und responsive Regeln: `styles.css`
 - Profilbilder: `assets/`
 
-Die Inhalte sind auf Deutsch. Im Lebenslauf genannte Projekte ohne öffentliches
-Repository werden vorgestellt, aber nicht als öffentliche GitHub-Repositories
-verlinkt.
+Die Inhalte sind auf Deutsch. Projekte ohne öffentliches Repository werden
+vorgestellt, aber nicht als öffentliche GitHub-Repositories verlinkt.
 
 ## Datenschutz
 
